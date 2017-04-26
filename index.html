@@ -6,9 +6,61 @@
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Survey</title>
   </head>
   <body>
-
+    <div class="container">
+      <form id="beerService">
+        <!--selectBox-->
+        <h1>Select a beer:</h1>
+        <select class="form-control" id="beerType" name="beers">
+          <option>IPA</option>
+          <option>Pilsner</option>
+          <option>Stout</option>
+          <option>Porter</option>
+          <option>Flanders Ale</option>
+          <option>Hefeweizen</option>
+        </select>
+        <!--radioButton-->
+        <div class="radio">
+          <label>
+            <input type="radio" name="packaging" value="single">
+            Single
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="packaging" value="tallBoy">
+            Tall-Boy
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="packaging" value="sixPack">
+            6-Pack
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="packaging" value="twelvePack">
+            12-Pack
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="packaging" value="growler">
+            Growler
+          </label>
+        </div>
+        <!--DATE-->
+        <h3>Verify you age.</h3>
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <!--SUBMIT SUUUUBBBBMIIIIT-->
+        <button type="submit" name="logIt">LOG IT</button>
+      </form>
+    </div>
   </body>
 </html>
